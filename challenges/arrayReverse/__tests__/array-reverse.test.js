@@ -18,6 +18,6 @@ describe('array reverse', ()=> {
         expect(arrayReverse3([])).toEqual([]);
         expect(arrayReverse3([1])).toEqual([1]);
         expect(arrayReverse3([1, 1, 1, 2, 3, 1, 1, 1])).toEqual([1, 1, 1, 3, 2, 1, 1, 1]);
-    })
+    });
     
 });
