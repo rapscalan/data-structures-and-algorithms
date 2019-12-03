@@ -1,4 +1,4 @@
-const { arrayReverse, arrayReverse2, arrayReverse3 } = require('../array-reverse')
+const { arrayReverse, arrayReverse2, arrayReverse3 } = require('../array-reverse');
 
 describe('array reverse', ()=> {
     it('reverses an array', () => {
