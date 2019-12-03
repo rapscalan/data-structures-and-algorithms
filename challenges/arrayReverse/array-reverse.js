@@ -11,4 +11,10 @@ const arrayReverse2 = arr => {
   arr.forEach((number, index, arr) => result[index] = arr[arr.length - index - 1]);
   return result;
 };
-module.exports = { arrayReverse, arrayReverse2 };
+
+const arrayReverse3 = arr => {
+  const result = [];
+  arr.forEach((number) => result.unshift(number));
+  return result;
+};
+module.exports = { arrayReverse, arrayReverse2, arrayReverse3 };
