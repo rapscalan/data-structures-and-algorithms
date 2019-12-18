@@ -1,5 +1,3 @@
-import { isModuleDeclaration } from "@babel/types";
-
 class Node {
   constructor(value, next = null){
     this.value = value;
@@ -16,40 +14,35 @@ class Stack {
   }
   pop(){
     if(!this.top) return null;
-
     const top = this.top;
     this.top = top.next;
-    return top;
+    return top.value;
   }
   peek(){
     if(!this.top) return null;
-    return this.top.value;
+    return this.top;
   }
   isEmpty(){
     return !this.top;
   }
 }
 
-class PsuedoQueue{
+class PseudoQueue{
   constructor(){
     this.enqueueStack = new Stack();
     this.dequeueStack = new Stack();
   }
   enqueue(value){
-    if(this.dequeueStack.peek() !== null){
-      while(this.dequeueStack.peek() !== null){
-        this.enqueueStack.push(this.dequeueStack.pop());
-      }
+    while(this.dequeueStack.peek() !== null){
+      this.enqueueStack.push(this.dequeueStack.pop());
     }
     this.enqueueStack.push(value);
   }
   dequeue(){
-    if(this.enqueueStack.peek() !== null){
-      while(this.enqueueStack.peek() !== null){
-        this.dequeueStack.push(this.enqueueStack.pop());
-      }
+    while(this.enqueueStack.peek() !== null){
+      this.dequeueStack.push(this.enqueueStack.pop());
     }
     return this.dequeueStack.pop();
   }
 }
-module.exports = PsuedoQueue;
+module.exports = PseudoQueue;

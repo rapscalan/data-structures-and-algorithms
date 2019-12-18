@@ -1,13 +1,30 @@
-const PsuedoQueue = require('../queue-with-stacks');
+const PseudoQueue = require('../queue-with-stacks');
 let queue;
-beforeAll(()=> {
-  queue = new PsuedoQueue();
-  //queue.enqueue(25);
+beforeEach(()=> {
+  queue = new PseudoQueue();
 });
-describe('PsuedoQueue', () => {
+describe('PseudoQueue', () => {
   it('can enqueue items', ()=> {
     queue.enqueue(25);
     expect(queue.dequeue()).toEqual(25);
   });
-  it('can enqueue')
+  it('returns the first element in the queue after several items enqueued', ()=> {
+    queue.enqueue(1);
+    queue.enqueue(2);
+    queue.enqueue(3);
+    queue.enqueue(4);
+    queue.enqueue(5);
+    expect(queue.dequeue()).toEqual(1);
+  });
+  it('puts an item at the end of the queue', () => {
+    queue.enqueue(1);
+    queue.enqueue(2);
+    queue.enqueue(3);
+    queue.enqueue(4);
+    queue.enqueue(5);
+    queue.dequeue();
+    queue.enqueue(6);
+    expect(queue.dequeue()).toEqual(2);
+  
+  });
 });
