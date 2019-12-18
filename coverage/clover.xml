@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576705000257" clover="3.2.0">
-  <project timestamp="1576705000257" name="All files">
-    <metrics statements="122" coveredstatements="85" conditionals="27" coveredconditionals="17" methods="27" coveredmethods="21" elements="176" coveredelements="123" complexity="0" loc="122" ncloc="122" packages="5" files="6" classes="6"/>
+<coverage generated="1576706385929" clover="3.2.0">
+  <project timestamp="1576706385929" name="All files">
+    <metrics statements="123" coveredstatements="85" conditionals="27" coveredconditionals="17" methods="27" coveredmethods="21" elements="177" coveredelements="123" complexity="0" loc="123" ncloc="123" packages="5" files="6" classes="6"/>
     <package name="PseudoQueue">
       <metrics statements="21" coveredstatements="20" conditionals="5" coveredconditionals="3" methods="9" coveredmethods="8"/>
       <file name="queue-with-stacks.js" path="/Users/dev/Alchemy/careerTrack/code-challenges/data-structures-and-algorithms/challenges/PseudoQueue/queue-with-stacks.js">
@@ -93,9 +93,9 @@
       </file>
     </package>
     <package name="llinsertions">
-      <metrics statements="56" coveredstatements="20" conditionals="12" coveredconditionals="4" methods="8" coveredmethods="3"/>
+      <metrics statements="57" coveredstatements="20" conditionals="12" coveredconditionals="4" methods="8" coveredmethods="3"/>
       <file name="LinkedList.js" path="/Users/dev/Alchemy/careerTrack/code-challenges/data-structures-and-algorithms/challenges/llinsertions/LinkedList.js">
-        <metrics statements="53" coveredstatements="17" conditionals="12" coveredconditionals="4" methods="7" coveredmethods="2"/>
+        <metrics statements="54" coveredstatements="17" conditionals="12" coveredconditionals="4" methods="7" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
@@ -146,9 +146,10 @@
         <line num="81" count="0" type="stmt"/>
         <line num="82" count="0" type="stmt"/>
         <line num="83" count="0" type="stmt"/>
-        <line num="85" count="0" type="stmt"/>
+        <line num="84" count="0" type="stmt"/>
         <line num="86" count="0" type="stmt"/>
-        <line num="89" count="1" type="stmt"/>
+        <line num="87" count="0" type="stmt"/>
+        <line num="90" count="1" type="stmt"/>
       </file>
       <file name="Node.js" path="/Users/dev/Alchemy/careerTrack/code-challenges/data-structures-and-algorithms/challenges/llinsertions/Node.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>

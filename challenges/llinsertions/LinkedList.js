@@ -81,6 +81,7 @@ class LinkedList {
     let str = '';
     while(curr != null){
       str += curr.val + '->';
+      curr += curr.next;
     }
     str += 'null';
     return str;
