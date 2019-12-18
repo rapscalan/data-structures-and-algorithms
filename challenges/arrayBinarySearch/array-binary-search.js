@@ -3,10 +3,7 @@ const binarySearch = (arr, val, index) => {
     return -1;
   }
   const midpoint = Math.floor(arr.length / 2);
-  //console.log('index' + midpoint);
   const midpointValue = arr[midpoint];
-  //console.log(midpointValue);
-  //console.log('offset ' + index);
   if(midpointValue === val){
     return midpoint + index;
   } 
