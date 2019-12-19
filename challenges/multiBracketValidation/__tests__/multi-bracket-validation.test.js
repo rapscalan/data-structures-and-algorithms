@@ -10,4 +10,7 @@ describe('It tests whether a string has matching brackets', () => {
   it('should return false for incorrectly formed braces', () => {
     expect(multiBracketValidation('{[()()]}()')).toEqual(true);
   });
+  it('should return true for brackets with characters', () => {
+    expect(multiBracketValidation('{(asbd)}[abd]')).toEqual(true);
+  });
 });
