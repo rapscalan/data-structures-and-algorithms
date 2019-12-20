@@ -3,6 +3,5 @@ class Node {
     this.val = val;
     this.next = null;
   }
-module.exports = Node;
 }
-
+module.exports = Node;
