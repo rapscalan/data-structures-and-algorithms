@@ -438,6 +438,7 @@ const revenueTotals = {
 
 describe('daily revenue', () => {
   it('returns total revenue by day', () => {
-    expect(revenue(transactions)).toMatchObject(revenueTotals);
+    //expect(revenue(transactions)).toMatchObject(revenueTotals);
+    expect(revenue(transactions)).toEqual(expect.objectContaining(revenueTotals));
   });
 });
