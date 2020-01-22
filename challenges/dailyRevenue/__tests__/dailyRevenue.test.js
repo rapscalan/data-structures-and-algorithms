@@ -435,24 +435,9 @@ const revenueTotals = {
   'Wed Jul 17 2019': 8,
   'Wed Jul 24 2019': 4,
 };
-// let transactions = [
-//   {
-//     price: 4,
-//     timestamp: 1564157407582
-//   },
-//   {
-//     price: 6,
-//     timestamp: 1564157407582
-//   }
-// ]
+
 describe('daily revenue', () => {
   it('returns total revenue by day', () => {
-    // expect(revenue(transactions)).toEqual(expect.any(Object));
     expect(revenue(transactions)).toMatchObject(revenueTotals);
-
-    // const result = revenue(transactions);
-    // revenueTotals.forEach(el => {
-    //   expect(result).toContainEqual(el);      
-    // });
   });
 });
