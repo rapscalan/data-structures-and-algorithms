@@ -11,10 +11,10 @@ const fizzBuzzTree = (aTree)=>{
   let newNode;
   if(curr.value % 3 === 0 && curr.value % 5 === 0){
     //create node with fizzbuzz
-    newNode = new Node('fizzBuzz');
+    newNode = new Node('FizzBuzz');
   } else if(curr.value % 3 === 0){
     //create node with fizz
-    newNode = new Node('fizz');
+    newNode = new Node('Fizz');
   } else if(curr.value % 5 === 0){
     //create node with buzz
     newNode = new Node('Buzz');
