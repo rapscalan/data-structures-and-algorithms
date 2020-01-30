@@ -8,7 +8,7 @@ class Node{
 
 const fizzBuzzTree = (aTree)=>{
   let curr = aTree;
-  let newNode;
+  let newNode; //eslint-disable-line no-unused-vars
   if(curr.value % 3 === 0 && curr.value % 5 === 0){
     //create node with fizzbuzz
     newNode = new Node('FizzBuzz');
